@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempConverter</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            color: #1e293b;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1e3a8a;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 13px 20px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TempConverter v1</h1>
+    <p>Temperature Conversion Application</p>
+    <p>COMP3520 - Software Engineering</p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>About the Project</h2>
+        <p><strong>Developer:</strong> Brahm Singh Bhasin</p>
+        <p><strong>Institution:</strong> Thompson Rivers University</p>
+        <p><strong>Assignment:</strong> Assignment 5 - Clean Code,
+            Testing and CI/CD Pipeline</p>
+
+        <p>This Java application converts temperatures using
+            clean code principles, input validation, and
+            automated JUnit testing.</p>
+    </section>
+
+    <section class="card">
+        <h2>Supported Conversions</h2>
+
+        <ul>
+            <li>Celsius to Fahrenheit</li>
+            <li>Fahrenheit to Celsius</li>
+            <li>Celsius to Kelvin</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>CI/CD Pipeline</h2>
+
+        <p>Source &rarr; Build &rarr; Test &rarr; Deploy</p>
+
+        <p>The application is automatically built, tested and
+            deployed using GitHub Actions. Deployment only
+            occurs when all automated tests pass.</p>
+    </section>
+
+    <section class="card">
+        <h2>Test Results and Download</h2>
+
+        <a class="button" href="test-results.html">
+            Latest test results
+        </a>
+
+        <a class="button" href="download/">
+            Download the JAR
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    COMP3520 | Assignment 5 | Temperature Converter | 2026
+</footer>
+
+</body>
+</html>

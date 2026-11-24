@@ -1,0 +1,32 @@
+# Maven build files
+target/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Compiled Java files
+*.class
+
+# Log files
+*.log
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Visual Studio Code files
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
