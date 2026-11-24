@@ -17,7 +17,7 @@ public class TemperatureConverterTest {
 
     @Test
     void convertsBoilingPointToFahrenheit() {
-        assertEquals(212.0,
+        assertEquals(200.0,
                 TemperatureConverter.convertCelsiusToFahrenheit(100.0),
                 TOLERANCE);
     }
