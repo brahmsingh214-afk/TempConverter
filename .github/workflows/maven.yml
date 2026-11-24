@@ -1,3 +1,4 @@
+
 name: CI/CD Pipeline - Temperature Converter
 
 # SOURCE trigger: every push to main starts the pipeline.
@@ -68,6 +69,7 @@ jobs:
         with:
           name: app-jar
           path: target/*.jar
+          overwrite: true
 
   # ---------------- STAGE 3: TEST ----------------
   test:
@@ -92,6 +94,7 @@ jobs:
         with:
           name: test-reports
           path: target/surefire-reports/
+          overwrite: true
 
   # ---------------- STAGE 4: DEPLOY ----------------
   deploy:
@@ -137,7 +140,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Wait for artifact availability
+        run: sleep 30
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
