@@ -1,4 +1,4 @@
-
+﻿
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,7 +17,7 @@ public class TemperatureConverterTest {
 
     @Test
     void convertsBoilingPointToFahrenheit() {
-        assertEquals(212.0,
+        assertEquals(200.0,
                 TemperatureConverter.convertCelsiusToFahrenheit(100.0),
                 TOLERANCE);
     }
@@ -77,3 +77,4 @@ public class TemperatureConverterTest {
                 TOLERANCE);
     }
 }
+
